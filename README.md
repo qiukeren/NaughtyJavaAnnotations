@@ -18,6 +18,8 @@ It just add some annotations for notification.
 Some annotations are just Naughty, such as:
 
 ```
+import com.mudu.annotations.*;
+
 @Controller
 @RequestMapping("z")
 public class ZiaoController extends BaseController {
@@ -40,11 +42,36 @@ public class ZiaoController extends BaseController {
 
             Object c = OrgService.getTree();
             System.out.println(JSON.toJSONString(c));
-
         } catch (Exception e) {
             e.printStackTrace();
         }
 
     }
 }
+```
+
+
+## List
+
+For usage, read the usage section.
+
+The annotations List is:
+
+```
+AddTemporarilyForTest
+DoNotModify
+Fuck
+ItMayWorksButIAmNotSure
+ItWorksOVersion
+ItWorksOnMyComputer
+JavaVersionMustSatisfy
+MagicAndDoNotModifyIt
+PoweredBy
+ProudlyPoweredBy
+StrutsSucks
+Temp
+TestWhenDeveloping
+TestedBy
+TheCorrespodingSQLIs
+ThisCodeWasCreatedAt
 ```
