@@ -6,10 +6,11 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Created by mudu on 2016/12/14.
+ * Created by mudu on 2016/12/15.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.METHOD})
-public @interface UnImplemented {
-
+public @interface UnImplementedMethod {
+    public String value();
+    public String responser() default "";
 }

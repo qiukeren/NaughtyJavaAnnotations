@@ -9,9 +9,11 @@ When I want to add a temp test `public static void main(String[] args)` and add 
 
 ## Principle
 
-The annotations do not modify any line of code nor do some magic to your code.
+These annotations do not modify any line of code nor do some magic to your code and just add some annotations for notification.
 
-It just add some annotations for notification.
+Some annotations have magic useages, we will adress it in the usage chapter.
+
+
 
 ## Usage
 
@@ -48,6 +50,19 @@ public class ZiaoController extends BaseController {
 
     }
 }
+```
+
+
+## Method ahd util pair:
+
+#### UmImplementedMethod and correspoinding util
+```
+@UnImplementedMethod("i will implement it later")
+public void dropColumn() {
+}
+
+//Use this method to get all annotation with UnImplementedMethod
+UnImplementedMethodUtil.scan("com.my.mdb")
 ```
 
 
